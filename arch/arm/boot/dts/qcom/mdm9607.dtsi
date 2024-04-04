@@ -53,7 +53,7 @@
 		modem_adsp_mem: modem_adsp_region@0 {
 			compatible = "removed-dma-pool";
 			no-map-fixup;
-			reg = <0x82a00000 0x5000000>;
+			reg = <0x82a00000 0x5100000>;
 		};
 
 		cnss_debug_mem: cnss_debug_region@0 {
