@@ -1822,7 +1822,7 @@ static int32_t q6asm_callback(struct apr_client_data *data, void *priv)
 					flags);
 				return 0;
 			} else {
-				pr_err("%s: payload size of %x is less than expected.\n",
+				pr_debug("%s: payload size of %x is less than expected.\n",
 					__func__, data->payload_size);
 			}
 			if (payload[0] == ASM_STREAM_CMD_SET_PP_PARAMS_V2) {
@@ -1894,7 +1894,7 @@ static int32_t q6asm_callback(struct apr_client_data *data, void *priv)
 							data->payload_size);
 				}
 			} else {
-				pr_err("%s: payload size of %x is less than expected.\n",
+				pr_debug("%s: payload size of %x is less than expected.\n",
 					__func__, data->payload_size);
 			}
 			break;
